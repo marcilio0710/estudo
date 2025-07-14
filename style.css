@@ -247,7 +247,7 @@ nav{
     justify-content: center;
     left: 0;  
     right: 0;
-    top: 28vh ;
+    top: 25.3vh;
     height:68vh;
     width: 100vw;
     background-color: #736151;
@@ -257,7 +257,7 @@ nav{
   }
    
   nav{
-    height: 25vh;
+    height: 20vh;
     
   }
 
@@ -309,16 +309,12 @@ nav{
 
 @media screen and (max-width: 768px) {
 
-  .nav-list{ 
-    top: 27vh;
-    background-color: #e95555;  
-    height:74vh;
-    width: 100vw;
-}
+
   .login{  
-    width: 25vw;
+    width: 25vw; 
 }
   .nav-list ul {
+    
     gap: 25px;
 }
   
