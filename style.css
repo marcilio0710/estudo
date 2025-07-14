@@ -310,7 +310,7 @@ nav{
 @media screen and (max-width: 768px) {
 
   .nav-list{ 
-    top: 26vh;
+    top: 25.8vh;
     background-color: #e95555;  
     height:74vh;
 }
