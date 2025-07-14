@@ -257,7 +257,7 @@ nav{
   }
    
   nav{
-    height: 20vh;
+    height: 25vh;
     
   }
 
@@ -318,7 +318,6 @@ nav{
     width: 25vw;
 }
   .nav-list ul {
-    
     gap: 25px;
 }
   
