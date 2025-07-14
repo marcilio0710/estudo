@@ -262,8 +262,9 @@ nav{
     justify-content: center;
     left: 0;  
     right: 0;
-    top: 15vh;
-    height:74vh;
+    top:  12vh;
+    
+    height:90vh;
     width: 100vw;
     background-color: #736151;
     transform: translateX(100%);
@@ -272,7 +273,8 @@ nav{
   }
   
   nav{
-    height: 10vh;
+    height: 12vh;
+    margin-top:5vh;
     
   }
 
@@ -321,6 +323,29 @@ nav{
 .texto-login{
   font-size: 14px;
 }
+  .sub-menu {
+    position: absolute;
+    left: 100%;   /* abre para o lado direito */
+    top: 0;
+    background-color: #516D73;
+    display: none;
+    min-width: 220px;
+    z-index: 999;
+  }
+
+  .has-submenu {
+    position: relative;
+  }
+
+  .has-submenu.active .sub-menu {
+    display: block;
+  }
+  .menu-arrow {
+  display: inline-block;
+  transform: rotate(-90deg); /* faz a seta apontar para a direita */
+  transition: transform 0.3s ease;
+}
+
 }
 
 @media screen and (max-width: 768px) {
