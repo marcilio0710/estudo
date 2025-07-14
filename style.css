@@ -246,17 +246,15 @@ nav{
     justify-content: center;
     left: 0;  
     right: 0;
-    top: 27.5vh;
+    top: 30vh;
     height:68vh;
     width: 100%;
-    background-color: #516D73;
+    background-color: #736151;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     
   }
-
-  
-  
+   
   nav{
     height: 20vh;
     
@@ -267,8 +265,8 @@ nav{
 }
 
   .logo img{
-  height: 120px;
-  width: 150px; 
+  height: 100px;
+  width: 110px; 
   }
 
   .mobile-menu{
@@ -277,7 +275,7 @@ nav{
     z-index: 10;
     position: absolute;    /* <-- Adiciona esta linha */
     right: 30px;           /* <-- Alinha à direita */
-    top: 100px;
+    top: 80px;
   }
   .nav-list ul {
     flex-direction: column;
@@ -314,7 +312,14 @@ nav{
     width: 25vw;
   }
   .nav-list{ 
-    top: 28.5vh;
+    top: 29vh;
+    background-color: #e95555;    
+}
+  .nav-list ul {
+ 
+    gap: 25px;
+}
+  
 }
 @keyframes navLinkFade{
   from{
