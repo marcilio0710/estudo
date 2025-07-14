@@ -9,7 +9,12 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
+body{
+  overflow: hidden;
+}
+html{
+  overflow: hidden;
+}
 .social-bar{
     display: flex;
     flex-direction: row;
@@ -94,7 +99,8 @@ nav{
   height: 24vh; 
   width: 100%;
   margin-top: 0;
-  padding: 20px 50px 20px 50px;  
+  padding: 20px 50px 20px 50px; 
+  
 
 }
 
@@ -280,8 +286,7 @@ nav{
   .nav-list ul {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-left: 0;  
+    align-items: center;     
     gap: 30px;
 }
   .nav-list li{
@@ -308,15 +313,17 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
-  .login{  
-    width: 25vw;
-  }
+
   .nav-list{ 
     top: 29vh;
-    background-color: #e95555;    
+    background-color: #e95555;  
+    overflow-x: hidden;  
+}
+  .login{  
+    width: 25vw;
 }
   .nav-list ul {
- 
+    
     gap: 25px;
 }
   
