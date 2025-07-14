@@ -262,7 +262,7 @@ nav{
     justify-content: center;
     left: 0;  
     right: 0;
-    top: 20vh;
+    top: 15vh;
     height:74vh;
     width: 100vw;
     background-color: #736151;
@@ -272,7 +272,7 @@ nav{
   }
   
   nav{
-    height: 20vh;
+    height: 10vh;
     
   }
 
