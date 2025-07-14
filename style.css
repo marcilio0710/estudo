@@ -10,13 +10,26 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+  body{
+    background: #F2F2F2 ;
+    background-size: cover;
+    z-index: 10;
+    display: flex; /*leva o footer para o fundo da página*/
+    flex-direction: column;/*leva o footer para o fundo da página*/
+    background: linear-gradient(#ECEFFE, #CED6FB);
+    justify-content:space-between;
+    overflow-x: hidden;
+    height: 100vh;      
+     
+}
 .social-bar{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
     background-color: #BACDD9;
-    height: 50px;
+    height: 5vh;
     width: 100%;
     gap: 3rem;
     padding: 20px 50px 20px 50px;       
@@ -89,34 +102,36 @@
 nav{
   display: flex;  
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #516D73;
-  height: 24vh; 
+  height: 20vh;
   width: 100%;
-  margin-top: 0;
-  padding: 20px 50px 20px 50px; 
-  
-
-}
-
-.logo{
+  margin-top:6.3vh;
   position: absolute;
-  padding-right:1100px;
+  padding: 0 2rem; /* adiciona espaçamento lateral */
+   
 }
+
+.logo{  
+  display: flex;
+  align-items: center;
+  /*margin-left: auto;  empurra para a direita */
+  padding-right: 2rem; /* opcional para espaçamento da borda */
+}
+
 .logo img{
-  height: 130px;
-  width: 130px; 
-  padding-top: 2vh;
-  
+  height: 110px;
+  width: 110px; 
+  padding-top: 0.7rem;
   cursor: pointer; 
 }
+
 .nav-list ul{  
   display: flex;  
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 60px;
-  padding-left: 200px;   
+  gap: 60px;     
   cursor: pointer;
   
 }
@@ -247,15 +262,15 @@ nav{
     justify-content: center;
     left: 0;  
     right: 0;
-    top: 25.3vh;
-    height:68vh;
+    top: 20vh;
+    height:74vh;
     width: 100vw;
     background-color: #736151;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     
   }
-   
+  
   nav{
     height: 20vh;
     
@@ -263,6 +278,7 @@ nav{
 
   .logo{
   padding-right:0px;
+  
 }
 
   .logo img{
@@ -276,7 +292,7 @@ nav{
     z-index: 10;
     position: absolute;    /* <-- Adiciona esta linha */
     right: 30px;           /* <-- Alinha à direita */
-    top: 80px;
+    /*padding-top:0;*/
   }
   .nav-list ul {
     flex-direction: column;
