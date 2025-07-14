@@ -249,7 +249,7 @@ nav{
     right: 0;
     top: 28vh ;
     height:68vh;
-    width: 100%;
+    width: 100vw;
     background-color: #736151;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
@@ -313,6 +313,7 @@ nav{
     top: 27vh;
     background-color: #e95555;  
     height:74vh;
+    width: 100vw;
 }
   .login{  
     width: 25vw;
