@@ -9,12 +9,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
-  overflow: hidden;
-}
-html{
-  overflow: hidden;
-}
+
 .social-bar{
     display: flex;
     flex-direction: row;
@@ -252,7 +247,7 @@ nav{
     justify-content: center;
     left: 0;  
     right: 0;
-    top: 30vh;
+    top: 35vh;
     height:68vh;
     width: 100%;
     background-color: #736151;
@@ -315,9 +310,9 @@ nav{
 @media screen and (max-width: 768px) {
 
   .nav-list{ 
-    top: 29vh;
+    top: 26vh;
     background-color: #e95555;  
-    overflow-x: hidden;  
+    height:74vh;
 }
   .login{  
     width: 25vw;
