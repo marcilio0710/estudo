@@ -277,10 +277,10 @@ nav{
 
   
 .nav-list {
-  position: fixed;
-  top: 180px;
+  position: absolute;
+  top: 120px;
   left: 0;
-  height: calc(100vh - 180px);;
+  height: calc(100vh - 120px);;
   width: 100vw;
   background-color: #736151;
   transform: translateX(100%);
@@ -288,15 +288,19 @@ nav{
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
   overflow-y: auto;
-   padding-bottom: 5rem;
+  padding-bottom: 5rem;
   
 }
   .nav-list.ativo {
     transform: translateX(0);
 }
   nav{
+    position: absolute;
+    z-index: 1000; 
+    top: 0;
+    left: 0;
     height: 120px;
     margin-top:60px;
     
@@ -328,7 +332,7 @@ nav{
     margin-top: 0;
     height: 100%;
     padding-left: 30px;
-    gap:50px;
+    gap:20px;
     transform: none;
     transition: none;    
 }
