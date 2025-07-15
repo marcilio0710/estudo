@@ -5,13 +5,13 @@ const nav = document.querySelector('.nav-list');
 const items = nav.querySelectorAll('li');
 
 menu.addEventListener('click', ()=>{
-  menu.classList.toggle('ativo');
-  nav.classList.toggle('ativo');
+  menu.classList.toggle('active');
+  nav.classList.toggle('active');
 
   items.forEach((el, i) => {
-  el.style.animation = el.style.animation? '' : `navLinkFade 0.5s ease forwards ${i/7 + 0.3}s`;
+  el.style.animation = el.style.animation? '' : `navLinkFade 0s ease forwards ${0}s`;
     
-  document.body.style.overflow = nav.classList.contains('ativo') ? 'hidden' : '';//mantem o boddy fixo.
+    document.body.style.overflow = nav.classList.contains('ativo') ? 'hidden' : '';//mantem o boddy fixo.
     
   });
 });
