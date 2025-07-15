@@ -104,11 +104,11 @@
 nav{
   display: flex;  
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #516D73;
   height: 22vh;
   width: 100%;
-  margin-top:10vh;
+  margin-top:9.8vh;
   position: fixed;
   padding: 0 2rem; /* adiciona espaçamento lateral */
    
@@ -172,10 +172,6 @@ nav{
 .menu-arrow{
   font-size: 0.8rem;
   padding:0.2rem
-}
-
-.texto-matricula{
-  z-index: 10;
 }
 
 .nav-list a::after {
@@ -273,22 +269,28 @@ nav{
 .sub-menu a::after {
   content: none !important;
 }
-@media screen and (max-width: 992px) {
+@media screen and (orientation: portrait) {
 
-  
+  body{
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+   
+  }
 .nav-list {
   position: absolute;
-  top: 120px;
+  top: 8vh;
   left: 0;
-  height: calc(100vh - 120px);;
+  height: 50vh;
+  max-height: calc(100vh - 11vh - 9.8vh);
   width: 100vw;
   background-color: #736151;
   transform: translateX(100%);
-  z-index: 999; /* garantir que fique acima do resto */
+  z-index: 10; /* garantir que fique acima do resto */
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
   overflow-y: auto;
   padding-bottom: 5rem;
   
@@ -297,11 +299,11 @@ nav{
     transform: translateX(0);
 }
   nav{
-    position: absolute;
+    position: fixed;
     z-index: 1000; 
     top: 0;
     left: 0;
-    height: 120px;
+    height: 8vh;
     margin-top:60px;
     
 }
@@ -312,8 +314,8 @@ nav{
 }
 
   .logo img{
-  height: 100px;
-  width: 110px; 
+  height: 8vh;
+  width: 15vw; 
   }
 
   .mobile-menu{
@@ -325,6 +327,147 @@ nav{
     z-index: 10;
       
   }
+  .nav-list ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin-top: 0;
+    height: 100%;
+    padding-left: 30px;
+    gap:40px;
+    transform: none;
+    transition: none;    
+}
+  .nav-list li{
+    margin-left: 0;
+    opacity: 0;
+    text-align: left; /* alinha o texto à esquerda */
+    
+  }
+  .nav-list a{
+    text-align: left; /* garante que o link também fique alinhado */
+  }
+
+  .nav-list.active{
+    transform: translateX(0);
+  }
+
+  .login{  
+    border-radius: 10px;
+    width: 25vw;
+    border: none;
+    max-width: 100%;
+    font-size: 17px;
+
+}
+.texto-login{
+  font-size: 14px;
+}
+  .sub-menu {
+    display:grid;
+    position: absolute;     
+    top: 0;
+    background-color: #516D73;    
+    min-width: 220px;    
+    margin-top: -70px;
+    left: 110%;     /* abre para o lado direito */
+    transform: none;
+    
+}
+
+  .sub-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+    margin: 0;   
+    gap:20px;     
+}
+
+  .sub-menu ul li {
+    width: 100%;
+    text-align: center; 
+    padding: 15px; 
+    padding-top: 6px; 
+    padding-bottom: 20px;      
+}
+
+  .has-submenu {
+    position: relative;
+}
+
+  .has-submenu.active .sub-menu {
+    display: block;
+}
+  .menu-arrow {
+  display: inline-block;
+  transform: rotate(-90deg); /* faz a seta apontar para a direita */  
+  transition: none;
+}
+
+}
+@media screen and (max-width: 992px) and (orientation: landscape) {
+
+  body{
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+   
+  }
+.nav-list {
+  position: absolute;
+  top: 14vh;
+  left: 0;
+  height: 72vh;
+  max-height: calc(100vh - 11vh - 9.8vh);
+  width: 100vw;
+  background-color: #736151;
+  transform: translateX(100%);
+  z-index: 10; /* garantir que fique acima do resto */
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-y: auto;
+  
+}
+  .nav-list.ativo {
+    transform: translateX(0);
+}
+  nav{
+    position: fixed;
+    z-index: 1000; 
+    top: 0;
+    left: 0;
+    height: 14vh;
+    margin-top:60px;
+    
+}
+
+  .logo{
+  padding-right:0px;
+  
+}
+.logo img{
+  height: 60px;
+  width: 60px; 
+  padding-top: 0.7rem;
+  cursor: pointer; 
+}
+  .mobile-menu{
+    display: block;
+    cursor: pointer;
+    position: absolute;    /* <-- Adiciona esta linha */
+    right: 30px;           /* <-- Alinha à direita */
+    /*padding-top:0;*/
+    z-index: 10;
+        
+  }
+.nav-list.active {
+  transform: translateX(0);
+}
+  
   .nav-list ul {
     flex-direction: column;
     justify-content: flex-start;
@@ -403,10 +546,7 @@ nav{
   transform: rotate(-90deg); /* faz a seta apontar para a direita */  
   transition: none;
 }
-
 }
-
-
 @keyframes navLinkFade{
   from{
     opacity: 0;
