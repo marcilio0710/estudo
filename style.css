@@ -10,7 +10,10 @@
     font-family: "Poppins", sans-serif;
 }
 
-
+  html, body {
+  height: 100%;
+  overflow: auto;
+}
   body{
   display: flex;
   flex-direction: column;
@@ -277,7 +280,7 @@ nav{
   position: fixed;
   top: 180px;
   left: 0;
-  height: 776px;
+  height: calc(100vh - 180px);;
   width: 100vw;
   background-color: #736151;
   transform: translateX(100%);
@@ -287,6 +290,8 @@ nav{
   flex-direction: column;
   padding: 2rem;
   overflow-y: auto;
+   padding-bottom: 5rem;
+  
 }
   .nav-list.ativo {
     transform: translateX(0);
@@ -320,11 +325,10 @@ nav{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start; 
-    margin-top: 2rem;
+    margin-top: 0;
     height: 100%;
     padding-left: 30px;
     gap:50px;
-    margin-bottom: 2rem;   
     transform: none;
     transition: none;    
 }
