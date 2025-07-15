@@ -274,9 +274,9 @@ nav{
   
 .nav-list {
   position: fixed;
-  top: 16.9vh;
+  top: 180px;
   left: 0;
-  height: 100vh;
+  height: 776px;
   width: 100vw;
   background-color: #736151;
   transform: translateX(100%);
@@ -322,7 +322,7 @@ nav{
     margin-top: 2rem;
     height: 100%;
     padding-left: 30px;
-    gap:40px;
+    gap:70px;
     margin-bottom: 2rem;   
     transform: none;
     transition: none;    
