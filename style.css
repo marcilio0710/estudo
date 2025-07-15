@@ -105,7 +105,7 @@ nav{
   height: 24vh;
   width: 100%;
   margin-top:6.3vh;
-  position: absolute;
+  position: fixed;
   padding: 0 2rem; /* adiciona espaçamento lateral */
    
 }
