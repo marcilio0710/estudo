@@ -336,7 +336,9 @@ nav{
     height: 100%;
     padding-left: 30px;
     gap:25px;
-    margin-bottom: 2rem;       
+    margin-bottom: 2rem; 
+    transform: none;
+    transition: none;    
 }
   .nav-list li{
     margin-left: 0;
