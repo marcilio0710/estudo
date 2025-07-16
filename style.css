@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #f518182c;
+  background: #fff;
   background-size: cover;
  
   height: 100vh; 
@@ -225,10 +225,13 @@ nav{
   height: 2px;
   margin: 8px;
   color: #fff; 
-  transition: 0.5s; 
-}
-  .mobile-menu.ativo div {
-  transition-delay: 0.8s;/*Se quiser que o "X" só apareça depois que o menu abri*/
+  transition: 0.3s ease;
+ }
+
+
+  .mobile-menu.active div {
+  transition-delay: 0.2s;/*Se quiser que o "X" só apareça depois que o menu abri*/
+  background: #000000;
 }
 .sub-menu{
   display:grid;
@@ -274,17 +277,23 @@ nav{
   body{
     overflow-x: hidden;
     height: auto;
-    min-height: 100vh;
+    min-height: 100vh;  
+}
+  .social-icones{
+    margin-left:-35px; 
+}
+
+.login{
+  margin-left: 85px; 
+}
    
-  }
 .nav-list {
-  position: absolute;
-  top: 8vh;
+  position: fixed;
+  top: 0vh;
   left: 0;
-  height: 50vh;
-  max-height: calc(100vh - 11vh - 9.8vh);
+  height: 100vh;
   width: 100vw;
-  background-color: #736151;
+  background-color: #BACDD9;
   transform: translateX(100%);
   z-index: 10; /* garantir que fique acima do resto */
   transition: transform 0.3s ease-in-out;
@@ -292,7 +301,7 @@ nav{
   flex-direction: column;
   padding: 1.5rem;
   overflow-y: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 5rem;   
   
 }
   .nav-list.ativo {
@@ -304,10 +313,11 @@ nav{
     top: 0;
     left: 0;
     height: 8vh;
-    margin-top:60px;
-    
+    margin-top:60px;    
 }
-
+.nav-list a{
+  color: #000000;  
+}
   .logo{
   padding-right:0px;
   
@@ -322,21 +332,22 @@ nav{
     display: block;
     cursor: pointer;
     position: absolute;    /* <-- Adiciona esta linha */
-    right: 30px;           /* <-- Alinha à direita */
+    right: 52px;           /* <-- Alinha à direita */
     /*padding-top:0;*/
     z-index: 10;
+    
       
   }
   .nav-list ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start; 
-    margin-top: 0;
+    margin-top: 130px;
     height: 100%;
     padding-left: 30px;
-    gap:40px;
+    gap:50px;
     transform: none;
-    transition: none;    
+    transition: none;       
 }
   .nav-list li{
     margin-left: 0;
@@ -382,7 +393,7 @@ nav{
     align-items: flex-start;
     padding-left: 0;
     margin: 0;   
-    gap:20px;     
+    gap:20px;       
 }
 
   .sub-menu ul li {
@@ -414,15 +425,15 @@ nav{
     height: auto;
     min-height: 100vh;
    
-  }
+}
+
 .nav-list {
-  position: absolute;
-  top: 14vh;
+  position: fixed;
+  top: 0vh;
   left: 0;
-  height: 72vh;
-  max-height: calc(100vh - 11vh - 9.8vh);
+  height: 100vh;
   width: 100vw;
-  background-color: #736151;
+  background-color: #BACDD9;
   transform: translateX(100%);
   z-index: 10; /* garantir que fique acima do resto */
   transition: transform 0.3s ease-in-out;
@@ -445,7 +456,7 @@ nav{
     
 }
 
-  .logo{
+.logo{
   padding-right:0px;
   
 }
@@ -459,7 +470,7 @@ nav{
     display: block;
     cursor: pointer;
     position: absolute;    /* <-- Adiciona esta linha */
-    right: 30px;           /* <-- Alinha à direita */
+    right: 48px;           /* <-- Alinha à direita */
     /*padding-top:0;*/
     z-index: 10;
         
@@ -472,7 +483,7 @@ nav{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start; 
-    margin-top: 0;
+    margin-top: 80px;
     height: 100%;
     padding-left: 30px;
     gap:20px;
@@ -499,6 +510,7 @@ nav{
     border: none;
     max-width: 100%;
     font-size: 17px;
+    margin-left: 180px;
 
 }
 .texto-login{
