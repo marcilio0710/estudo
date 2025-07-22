@@ -36,7 +36,9 @@
         <nav>       
 
                 <div class="logo">
-                    Logo   
+                    <a href="index.html">
+                        <h1>Logo</h1> 
+                    </a>  
                 </div>
             
                 <div class="nav-list">            
@@ -106,18 +108,31 @@
     <main>
         <div class="container">
 
-            <h1>Recuperar Senha</h1>
-
             <form action="processa_recuperacao.php" method="POST">
+                 
+                <h1>Recuperar Senha</h1>
+
                 <div class="input-box">
+
                     <input placeholder="Digite seu email" type="email" name="email" required>
-                    <input placeholder="Digite sua data de nascimento" type="date" name="data_nascimento" required>
-                    <button type="submit" class="recupera-page">Redefinir senha</button>
+
                 </div>
+
+                                
+                <div class="input-box">
+
+                    <input placeholder="Digite sua data de nascimento" type="date" name="data_nascimento" required>
+
+                </div>
+
+                    <button type="submit" class="readefine-senha">Redefinir senha</button>
+
+               <div class="voltar-login">
                     <p><a href="login.html">Voltar ao login</a></p>
-            </form>
-            
-        </div>
+                </div>
+            </form>            
+            </div>
+
   </main>
   <script src="script.js"></script>
 </body>

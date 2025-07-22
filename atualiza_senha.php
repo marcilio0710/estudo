@@ -6,7 +6,6 @@ if (!isset($_SESSION['email_recuperacao'])) {
 }
 
 $conn = new mysqli("localhost", "root", "", "testes");
-
 if ($conn->connect_error) {
     die("Erro na conexão: " . $conn->connect_error);
 }
@@ -20,7 +19,7 @@ $stmt->bind_param("ss", $nova_senha, $email);
 
 if ($stmt->execute()) {
     unset($_SESSION['email_recuperacao']);
-    echo "Senha atualizada com sucesso! <a href='login.html'>Fazer login</a>";
+    echo "<script>alert('Senha atualizada com sucesso!'); window.location.href='login.html';</script>";
 } else {
     echo "Erro ao atualizar a senha.";
 }

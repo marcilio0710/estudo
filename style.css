@@ -130,20 +130,24 @@ nav{
   align-items: center;
   /*margin-left: auto;  empurra para a direita */
   padding-right: 2rem; /* opcional para espaçamento da borda */
-  
+  font-size: 20px;
+  color: #fff; /* Defina a cor do texto que preferir */
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
 }
 
+.logo a{
+    text-decoration: none;
+    color: white;
+    
+}
 .logo img{
   height: 110px;
   width: 110px; 
   padding-top: 0.7rem;
   cursor: pointer;    
    
-}
-.logo h1 {
-    font-size: 3rem; /* Altere o valor para aumentar ou diminuir o tamanho da fonte */
-    font-weight: bold;
-    color: #333; /* Defina a cor que preferir */
 }
 
 .nav-list.ativo {
@@ -499,7 +503,7 @@ nav{
 .logo h1 {
     font-size: 50px; /* Aumenta o tamanho da fonte */
     font-weight: bold;
-    color: #fff; /* Defina a cor do texto que preferir */
+    color: #000000; /* Defina a cor do texto que preferir */
     margin: 0; /* Remover qualquer margem indesejada */
 } 
 

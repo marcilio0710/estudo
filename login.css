@@ -23,10 +23,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: auto;
-    padding: 100px 20px 100px; /* padding-top igual à altura do header */
+    min-height: 100vh;
+    padding: 0;
     background: rgb(255, 255, 255) center center;
     background-size: cover;   
+    
 }
 .social-bar{
     position: relative;
@@ -34,13 +35,16 @@ main {
 nav{
     position: relative;
     margin-top:0vh;
+    
 }
 .logo h1 {
     font-size: 50px; /* Aumenta o tamanho da fonte */
     font-weight: bold;
     color: #fff; /* Defina a cor do texto que preferir */
     margin: 0; /* Remover qualquer margem indesejada */
+
 } 
+
 .container{
     width: 420px;
     background-color: transparent;
@@ -50,6 +54,7 @@ nav{
     padding: 30px 40px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     backdrop-filter: blur(20px);/*desfoca o fundo do container*/
+    
    
 }
 .container h1{

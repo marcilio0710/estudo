@@ -19,6 +19,7 @@
   z-index: 10;        
 }
 main {
+    display: flex;
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     display: flex;
@@ -42,7 +43,7 @@ header{
     height: auto;
     width: 100%;
     gap: 3rem;
-   padding:15px 50px;    
+    padding:15px 50px;    
 }
 .social-icones{
    display: flex;
