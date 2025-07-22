@@ -19,13 +19,15 @@ header{
   background-color: #333;
   z-index: 1; /* pode até remover se não for necessário */
 }
+
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding:0;
-  background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    padding: 100px 20px 100px; /* padding-top igual à altura do header */
+    background: rgb(255, 255, 255) center center;
+    background-size: cover;      
 }
 
 .social-bar{
