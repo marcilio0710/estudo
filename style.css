@@ -334,7 +334,7 @@ nav{
     z-index: 1000; 
     top: 0;
     left: 0;
-    height: 8vh;
+    height: 15vh;
     margin-top:0px;    
 }
 .nav-list a{
@@ -500,22 +500,15 @@ nav{
   padding-top: 0.7rem;
   cursor: pointer; 
 }
-.logo h1 {
-    font-size: 50px; /* Aumenta o tamanho da fonte */
-    font-weight: bold;
-    color: #000000; /* Defina a cor do texto que preferir */
-    margin: 0; /* Remover qualquer margem indesejada */
-} 
-
-  .mobile-menu{
-    display: block;
-    cursor: pointer;
-    position: absolute;    /* <-- Adiciona esta linha */
-    right: 48px;           /* <-- Alinha à direita */
-    /*padding-top:0;*/
-    z-index: 10;
+.mobile-menu{
+  display: block;
+  cursor: pointer;
+  position: absolute;    /* <-- Adiciona esta linha */
+  right: 48px;           /* <-- Alinha à direita */
+  /*padding-top:0;*/
+  z-index: 10;
         
-  }
+}
 .nav-list.active {
   transform: translateX(0);
 }
