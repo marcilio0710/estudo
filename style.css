@@ -13,6 +13,7 @@
   html, body {
   height: 100%;
   overflow: auto;
+  
 }
   body{
   display: flex;
@@ -20,15 +21,21 @@
   justify-content: space-between;
   background: #fff;
   background-size: cover;
- 
   height: 100vh; 
-  z-index: 10;        
+  z-index: 10;     
+     
+}
+header{
+  position: relative; /* <- troque o fixed por relative */
+  width: 100%;
+  background-color: #333;
+  z-index: 1; /* pode até remover se não for necessário */
 }
 .social-bar{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    position: fixed;
+    position: relative;
     align-items: center;
     background-color: #BACDD9;
     height: auto;
@@ -43,7 +50,8 @@
    text-align: center;   
    gap: 2rem; 
    border-radius: 50px;
-   transition: all .3s ease;     
+   transition: all .3s ease; 
+   margin-left: -24px;    
 }
 .social-link {
     display: flex;
@@ -86,6 +94,7 @@
   z-index: 10;
   cursor: pointer;
   transition: all .3s ease; 
+  
 }
 .login:hover{
   opacity: 0.8;
@@ -98,7 +107,8 @@
 .texto-login{
   font-size: 15px;
   color: rgb(0, 0, 0);
-  text-decoration: none;  
+  text-decoration: none; 
+   
 }
 
 nav{
@@ -108,10 +118,11 @@ nav{
   background-color: #516D73;
   height: 22vh;
   width: 100%;
-  margin-top:9.8vh;
-  position: fixed;
+  margin-top:0vh;
+  position: relative;
   padding: 0 2rem; /* adiciona espaçamento lateral */
-   
+  
+    
 }
 
 .logo{  
@@ -119,13 +130,20 @@ nav{
   align-items: center;
   /*margin-left: auto;  empurra para a direita */
   padding-right: 2rem; /* opcional para espaçamento da borda */
+  
 }
 
 .logo img{
   height: 110px;
   width: 110px; 
   padding-top: 0.7rem;
-  cursor: pointer; 
+  cursor: pointer;    
+   
+}
+.logo h1 {
+    font-size: 3rem; /* Altere o valor para aumentar ou diminuir o tamanho da fonte */
+    font-weight: bold;
+    color: #333; /* Defina a cor que preferir */
 }
 
 .nav-list.ativo {
@@ -140,6 +158,7 @@ nav{
   cursor: pointer;
   padding-left: 0;
   margin: 0;
+  margin-left: 169px;
   
 }
 
@@ -149,10 +168,9 @@ nav{
     align-items: center;
     justify-content: center; 
     cursor: pointer; 
-    z-index: 10;
-
-   
+    z-index: 10;   
 }
+
 .nav-list a{
   text-decoration: none;
   color: #fff;  
@@ -328,6 +346,7 @@ nav{
   width: 15vw; 
   }
 
+  
   .mobile-menu{
     display: block;
     cursor: pointer;
@@ -344,7 +363,8 @@ nav{
     align-items: flex-start; 
     margin-top: 130px;
     height: 100%;
-    padding-left: 30px;
+    padding-left: 0px;
+    margin-left: 30px;
     gap:50px;
     transform: none;
     transition: none;       
@@ -359,6 +379,10 @@ nav{
     text-align: left; /* garante que o link também fique alinhado */
   }
 
+.nav-list a i,
+.nav-list .menu-arrow {
+  color: #000 !important; 
+}
   .nav-list.active{
     transform: translateX(0);
   }
@@ -455,7 +479,12 @@ nav{
     margin-top:60px;
     
 }
-
+.nav-list a,
+.nav-list a i,
+.nav-list .menu-arrow {
+  color: #000 !important;
+  fill: #000 !important;
+}
 .logo{
   padding-right:0px;
   
@@ -466,6 +495,13 @@ nav{
   padding-top: 0.7rem;
   cursor: pointer; 
 }
+.logo h1 {
+    font-size: 50px; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    color: #fff; /* Defina a cor do texto que preferir */
+    margin: 0; /* Remover qualquer margem indesejada */
+} 
+
   .mobile-menu{
     display: block;
     cursor: pointer;
@@ -485,19 +521,21 @@ nav{
     align-items: flex-start; 
     margin-top: 80px;
     height: 100%;
-    padding-left: 30px;
+    margin-left: 30px;
     gap:20px;
     transform: none;
-    transition: none;    
+    transition: none;
+    padding-left: 0px;    
 }
   .nav-list li{
     margin-left: 0;
-    opacity: 0;
     text-align: left; /* alinha o texto à esquerda */
     
   }
+  
   .nav-list a{
     text-align: left; /* garante que o link também fique alinhado */
+    color: #000000;
   }
 
   .nav-list.active{
