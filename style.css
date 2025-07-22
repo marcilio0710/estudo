@@ -331,7 +331,7 @@ nav{
     top: 0;
     left: 0;
     height: 8vh;
-    margin-top:60px;    
+    margin-top:0px;    
 }
 .nav-list a{
   color: #000000;  
@@ -475,8 +475,9 @@ nav{
     z-index: 1000; 
     top: 0;
     left: 0;
-    height: 14vh;
-    margin-top:60px;
+    height: 25vh;
+    margin-top:0px;
+    padding-bottom: 5px;
     
 }
 .nav-list a,
